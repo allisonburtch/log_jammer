@@ -3290,6 +3290,197 @@ We've spent an enormous amount of time creating and checking these footprints an
 </deviceset>
 </devicesets>
 </library>
+<library name="burr-brown">
+<description>&lt;b&gt;Burr-Brown Components&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="SOT23-5">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;, 5 lead</description>
+<wire x1="-1.544" y1="0.713" x2="1.544" y2="0.713" width="0.1524" layer="21"/>
+<wire x1="1.544" y1="0.713" x2="1.544" y2="-0.712" width="0.1524" layer="21"/>
+<wire x1="1.544" y1="-0.712" x2="-1.544" y2="-0.712" width="0.1524" layer="21"/>
+<wire x1="-1.544" y1="-0.712" x2="-1.544" y2="0.713" width="0.1524" layer="21"/>
+<smd name="5" x="-0.95" y="1.306" dx="0.6" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.306" dx="0.6" dy="1.2" layer="1"/>
+<smd name="1" x="-0.95" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
+<text x="-1.778" y="-1.778" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="3.048" y="-1.778" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.1875" y1="0.7126" x2="-0.7125" y2="1.5439" layer="51"/>
+<rectangle x1="0.7125" y1="0.7126" x2="1.1875" y2="1.5439" layer="51"/>
+<rectangle x1="-1.1875" y1="-1.5437" x2="-0.7125" y2="-0.7124" layer="51"/>
+<rectangle x1="-0.2375" y1="-1.5437" x2="0.2375" y2="-0.7124" layer="51"/>
+<rectangle x1="0.7125" y1="-1.5437" x2="1.1875" y2="-0.7124" layer="51"/>
+</package>
+</packages>
+<symbols>
+<symbol name="OP-AMP+-">
+<wire x1="-3.81" y1="3.175" x2="-3.81" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="2.54" x2="-3.175" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="-2.54" x2="-3.175" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="3.8862" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-3.9116" x2="-2.54" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="0" x2="-5.08" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
+<text x="2.54" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-1.27" y="4.445" size="0.8128" layer="93" rot="R90">V+</text>
+<text x="-1.27" y="-5.715" size="0.8128" layer="93" rot="R90">V-</text>
+<pin name="-IN" x="-7.62" y="-2.54" visible="pad" length="short" direction="in"/>
+<pin name="+IN" x="-7.62" y="2.54" visible="pad" length="short" direction="in"/>
+<pin name="OUT" x="7.62" y="0" visible="pad" length="short" direction="out" rot="R180"/>
+<pin name="V+" x="-2.54" y="7.62" visible="pad" length="short" direction="pwr" rot="R270"/>
+<pin name="V-" x="-2.54" y="-7.62" visible="pad" length="short" direction="pwr" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="OPA642N" prefix="IC">
+<description>&lt;b&gt;Operational Amplifier&lt;/b&gt;&lt;p&gt;
+Wideband, Low Distortion</description>
+<gates>
+<gate name="G$1" symbol="OP-AMP+-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="-IN" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="V+" pad="5"/>
+<connect gate="G$1" pin="V-" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="SparkFun-RF">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find things that send or receive RF- GPS, cellular modules, Bluetooth, WiFi, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="ANTENNA-CHIP">
+<wire x1="-5" y1="2" x2="5" y2="2" width="0.2032" layer="21"/>
+<wire x1="5" y1="2" x2="5" y2="-2" width="0.2032" layer="21"/>
+<wire x1="5" y1="-2" x2="-5" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-5" y1="-2" x2="-5" y2="2" width="0.2032" layer="21"/>
+<smd name="8" x="-2.5" y="2" dx="1" dy="1" layer="1"/>
+<smd name="7" x="-1" y="2" dx="1" dy="1" layer="1"/>
+<smd name="6" x="1" y="2" dx="1" dy="1" layer="1"/>
+<smd name="5" x="2.5" y="2" dx="1" dy="1" layer="1"/>
+<smd name="4" x="2.5" y="-2" dx="1" dy="1" layer="1"/>
+<smd name="3" x="1" y="-2" dx="1" dy="1" layer="1"/>
+<smd name="FEED" x="-1" y="-2" dx="1" dy="1" layer="1"/>
+<smd name="GND" x="-2.5" y="-2" dx="1" dy="1" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="ANTENNA">
+<wire x1="0" y1="-2.54" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-2.54" y2="0" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<circle x="0" y="-5.08" radius="1.1359" width="0.254" layer="94"/>
+<text x="3.81" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="3.81" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GND" x="2.54" y="-10.16" visible="off" length="short" rot="R90"/>
+<pin name="SIGNAL" x="0" y="-10.16" visible="off" length="short" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="ANTENNA">
+<description>&lt;b&gt;Chip antenna&lt;/b&gt;&lt;p&gt;
+Chip antenna with ground or secondary connection. Common with larger metal RF connectors.</description>
+<gates>
+<gate name="G$1" symbol="ANTENNA" x="0" y="5.08"/>
+</gates>
+<devices>
+<device name="SMD1" package="ANTENNA-CHIP">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="SIGNAL" pad="FEED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+<library name="inductors">
+<description>&lt;b&gt;Inductors and Filters&lt;/b&gt;&lt;p&gt;
+Based on the previous library ind-a.lbr&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="0402">
+<description>&lt;b&gt;EMIFIL (R) Chip Ferrite Bead for GHz Noise&lt;/b&gt;&lt;p&gt;
+Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
+<wire x1="-0.245" y1="0.224" x2="0.245" y2="0.224" width="0.1524" layer="51"/>
+<wire x1="0.245" y1="-0.224" x2="-0.245" y2="-0.224" width="0.1524" layer="51"/>
+<wire x1="-1.473" y1="0.483" x2="1.473" y2="0.483" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="0.483" x2="1.473" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="1.473" y1="-0.483" x2="-1.473" y2="-0.483" width="0.0508" layer="39"/>
+<wire x1="-1.473" y1="-0.483" x2="-1.473" y2="0.483" width="0.0508" layer="39"/>
+<smd name="1" x="-0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<smd name="2" x="0.65" y="0" dx="0.7" dy="0.9" layer="1"/>
+<text x="-0.635" y="0.635" size="1.27" layer="25">&gt;NAME</text>
+<text x="-0.635" y="-1.905" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.554" y1="-0.3048" x2="-0.254" y2="0.2951" layer="51"/>
+<rectangle x1="0.2588" y1="-0.3048" x2="0.5588" y2="0.2951" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
+</package>
+</packages>
+<symbols>
+<symbol name="L">
+<text x="-3.81" y="1.3716" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-2.921" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-2.54" y1="-0.889" x2="2.54" y2="0.889" layer="94"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BLM15H" prefix="L">
+<description>&lt;b&gt;EMIFIL (R) Chip Ferrite Bead for GHz Noise&lt;/b&gt;&lt;p&gt;
+Source: http://www.murata.com/ Ferrite Bead BLM15H.pdf</description>
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="0402">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="B121SN1"/>
+<technology name="B221SN1"/>
+<technology name="D102SN1"/>
+<technology name="D182SN1"/>
+<technology name="D601SN1"/>
+<technology name="G102SN1"/>
+<technology name="G601SN1"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3352,7 +3543,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="C21" library="SparkFun-Capacitors" deviceset="CAP_POL" device="1206" value="10uF"/>
 <part name="TRIWAVGEN" library="linear" deviceset="*1458" device="D" technology="LM"/>
 <part name="LM1458" library="ic-package" deviceset="DIL8" device=""/>
-<part name="ICL7660" library="ic-package" deviceset="DIL8" device=""/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R23" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603-RES" value="100k"/>
@@ -3390,23 +3580,31 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="L2" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="27nH"/>
+<part name="IC1" library="burr-brown" deviceset="OPA642N" device="" value="M3500-1324S/T"/>
+<part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND29" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND31" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="RFOUTPUTANTENNA" library="SparkFun-RF" deviceset="ANTENNA" device="SMD1" value="80mW"/>
+<part name="FERRITEBEADLEAD" library="inductors" deviceset="BLM15H" device="" technology="B121SN1" value="type43"/>
+<part name="MICROSTRIPLINE" library="inductors" deviceset="BLM15H" device="" technology="B121SN1" value="50 Ohm"/>
+<part name="MICROSTRIPLN2" library="inductors" deviceset="BLM15H" device="" technology="B121SN1" value="50 Ohm"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="VOLTAGEINVERT" gate="G$1" x="-83.82" y="50.8"/>
+<instance part="VOLTAGEINVERT" gate="G$1" x="-35.56" y="-7.62"/>
 <instance part="NOISEGEN" gate="G$1" x="116.84" y="5.08" rot="R180"/>
 <instance part="D1" gate="G$1" x="116.84" y="40.64" rot="R90"/>
 <instance part="T1" gate="G1" x="160.02" y="5.08" rot="R90"/>
 <instance part="U$2" gate="G$1" x="172.72" y="-10.16" rot="R90"/>
-<instance part="GND1" gate="1" x="0" y="12.7" rot="R90"/>
+<instance part="GND1" gate="1" x="-17.78" y="-15.24" rot="R90"/>
 <instance part="GND2" gate="1" x="22.86" y="40.64" rot="R270"/>
 <instance part="SUPPLY1" gate="G$1" x="193.04" y="17.78" rot="R270"/>
 <instance part="+9" gate="G$1" x="106.68" y="78.74" rot="R270"/>
 <instance part="GND4" gate="1" x="0" y="27.94"/>
-<instance part="GND5" gate="1" x="-30.48" y="-7.62"/>
+<instance part="GND5" gate="1" x="-2.54" y="-22.86"/>
 <instance part="GND6" gate="1" x="76.2" y="-7.62"/>
 <instance part="L1" gate="G$1" x="136.906" y="92.964"/>
 <instance part="R1" gate="G$1" x="0" y="38.1" rot="R90"/>
@@ -3419,29 +3617,29 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="R13" gate="G$1" x="152.4" y="40.64"/>
 <instance part="R14" gate="G$1" x="143.002" y="35.56" rot="R270"/>
 <instance part="R15" gate="G$1" x="160.274" y="35.56" rot="R90"/>
-<instance part="R16" gate="G$1" x="205.74" y="71.12" rot="R90"/>
+<instance part="R16" gate="G$1" x="210.82" y="90.678" rot="R90"/>
 <instance part="R17" gate="G$1" x="172.72" y="12.7" rot="R90"/>
 <instance part="R18" gate="G$1" x="152.4" y="2.54" rot="R90"/>
 <instance part="R19" gate="G$1" x="152.4" y="12.7" rot="R270"/>
 <instance part="R20" gate="G$1" x="119.38" y="-15.24" rot="R270"/>
 <instance part="R22" gate="G$1" x="86.36" y="5.08"/>
 <instance part="C1" gate="G$1" x="-43.18" y="45.72"/>
-<instance part="C2" gate="G$1" x="-30.48" y="0"/>
+<instance part="C2" gate="G$1" x="-2.54" y="-15.24"/>
 <instance part="C3" gate="G$1" x="12.7" y="45.72"/>
 <instance part="C4" gate="G$1" x="86.36" y="43.18" rot="R90"/>
 <instance part="C5" gate="G$1" x="134.366" y="102.362" rot="R90"/>
 <instance part="C6" gate="G$1" x="132.08" y="73.914" rot="R270"/>
-<instance part="C7" gate="G$1" x="198.12" y="63.5" rot="R90"/>
-<instance part="C8" gate="G$1" x="198.12" y="53.34" rot="R90"/>
-<instance part="C9" gate="G$1" x="180.34" y="40.64" rot="R270"/>
-<instance part="C10" gate="G$1" x="218.44" y="30.48" rot="R270"/>
+<instance part="C7" gate="G$1" x="203.2" y="70.358" rot="R90"/>
+<instance part="C8" gate="G$1" x="203.2" y="60.198" rot="R90"/>
+<instance part="C9" gate="G$1" x="180.34" y="43.18" rot="R270"/>
+<instance part="C10" gate="G$1" x="213.36" y="40.64" rot="R270"/>
 <instance part="C11" gate="G$1" x="187.96" y="15.24" rot="R180"/>
 <instance part="C12" gate="G$1" x="165.1" y="-7.62" rot="R90"/>
 <instance part="C13" gate="G$1" x="142.24" y="7.62" rot="R270"/>
 <instance part="C14" gate="G$1" x="121.92" y="-5.08" rot="R270"/>
 <instance part="C15" gate="G$1" x="76.2" y="0"/>
-<instance part="C16" gate="G$1" x="-30.48" y="15.24" rot="R90"/>
-<instance part="C17" gate="G$1" x="12.7" y="10.16" rot="R180"/>
+<instance part="C16" gate="G$1" x="-17.78" y="5.08"/>
+<instance part="C17" gate="G$1" x="-60.96" y="-7.62"/>
 <instance part="C18" gate="G$1" x="83.82" y="76.2"/>
 <instance part="C19" gate="G$1" x="-10.16" y="71.12" rot="R270"/>
 <instance part="C20" gate="G$1" x="134.62" y="81.28" rot="R270"/>
@@ -3449,8 +3647,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="TRIWAVGEN" gate="A" x="-86.36" y="88.9"/>
 <instance part="TRIWAVGEN" gate="B" x="-66.04" y="86.36"/>
 <instance part="LM1458" gate="G$1" x="-12.7" y="48.26"/>
-<instance part="ICL7660" gate="G$1" x="-12.7" y="10.16" rot="R180"/>
-<instance part="GND7" gate="1" x="-38.1" y="15.24" rot="R270"/>
+<instance part="GND7" gate="1" x="-17.78" y="12.7" rot="R180"/>
 <instance part="GND8" gate="1" x="-27.94" y="30.48"/>
 <instance part="R23" gate="G$1" x="7.62" y="45.72" rot="R90"/>
 <instance part="C22" gate="G$1" x="20.32" y="50.8" rot="R90"/>
@@ -3483,10 +3680,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="GND25" gate="1" x="83.82" y="66.04"/>
 <instance part="GND26" gate="1" x="99.06" y="53.34"/>
 <instance part="+1" gate="G$1" x="139.954" y="109.982" rot="R270"/>
-<instance part="+2" gate="G$1" x="205.74" y="78.74"/>
-<instance part="GND3" gate="1" x="185.42" y="63.5" rot="R270"/>
-<instance part="GND27" gate="1" x="185.42" y="53.34" rot="R270"/>
-<instance part="L2" gate="G$1" x="205.74" y="38.1"/>
+<instance part="+2" gate="G$1" x="208.28" y="95.758" rot="R90"/>
+<instance part="GND3" gate="1" x="190.5" y="70.358" rot="R270"/>
+<instance part="GND27" gate="1" x="190.5" y="60.198" rot="R270"/>
+<instance part="L2" gate="G$1" x="210.82" y="50.292"/>
+<instance part="IC1" gate="G$1" x="195.58" y="40.64"/>
+<instance part="GND28" gate="1" x="193.04" y="30.48"/>
+<instance part="GND29" gate="1" x="193.04" y="50.8" rot="R180"/>
+<instance part="GND31" gate="1" x="239.776" y="33.528"/>
+<instance part="RFOUTPUTANTENNA" gate="G$1" x="237.236" y="50.8"/>
+<instance part="FERRITEBEADLEAD" gate="G$1" x="210.82" y="78.994" rot="R90"/>
+<instance part="MICROSTRIPLINE" gate="G$1" x="168.656" y="43.18"/>
+<instance part="MICROSTRIPLN2" gate="G$1" x="227.838" y="40.64"/>
 </instances>
 <busses>
 </busses>
@@ -3505,18 +3710,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="0" y1="33.02" x2="0" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="ICL7660" gate="G$1" pin="3"/>
-<wire x1="-2.54" y1="12.7" x2="-5.08" y2="12.7" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="-30.48" y1="-2.54" x2="-30.48" y2="-5.08" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-17.78" x2="-2.54" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C16" gate="G$1" pin="+"/>
-<wire x1="-33.02" y1="15.24" x2="-35.56" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-17.78" y1="7.62" x2="-17.78" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -3631,44 +3831,31 @@ We've spent an enormous amount of time creating and checking these footprints an
 </segment>
 <segment>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="187.96" y1="63.5" x2="193.04" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="70.358" x2="198.12" y2="70.358" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="GND27" gate="1" pin="GND"/>
 <pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="53.34" x2="193.04" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="60.198" x2="198.12" y2="60.198" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="N$4" class="0">
 <segment>
-<pinref part="ICL7660" gate="G$1" pin="4"/>
-<wire x1="-5.08" y1="15.24" x2="-5.08" y2="17.78" width="0.1524" layer="91"/>
-<pinref part="C17" gate="G$1" pin="-"/>
-<wire x1="-5.08" y1="17.78" x2="12.7" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="17.78" x2="12.7" y2="15.24" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="V-"/>
+<pinref part="GND28" gate="1" pin="GND"/>
 </segment>
-</net>
-<net name="N$5" class="0">
 <segment>
-<pinref part="C17" gate="G$1" pin="+"/>
-<wire x1="12.7" y1="7.62" x2="12.7" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="10.16" width="0.1524" layer="91"/>
-<pinref part="ICL7660" gate="G$1" pin="2"/>
-<wire x1="-2.54" y1="10.16" x2="-5.08" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="V+"/>
+<pinref part="GND29" gate="1" pin="GND"/>
 </segment>
-</net>
-<net name="N$7" class="0">
 <segment>
-<pinref part="ICL7660" gate="G$1" pin="5"/>
-<pinref part="C16" gate="G$1" pin="-"/>
-<wire x1="-20.32" y1="15.24" x2="-22.86" y2="15.24" width="0.1524" layer="91"/>
-<pinref part="LM1458" gate="G$1" pin="4"/>
-<wire x1="-22.86" y1="15.24" x2="-25.4" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="-20.32" y1="43.18" x2="-22.86" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="43.18" x2="-22.86" y2="15.24" width="0.1524" layer="91"/>
-<junction x="-22.86" y="15.24"/>
+<pinref part="RFOUTPUTANTENNA" gate="G$1" pin="GND"/>
+<pinref part="GND31" gate="1" pin="GND"/>
+<wire x1="239.776" y1="36.068" x2="239.776" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="VOLTAGEINVERT" gate="G$1" pin="GND"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+<wire x1="-20.32" y1="-15.24" x2="-22.86" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -3832,18 +4019,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="-5.08" y1="71.12" x2="-7.62" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="71.12" x2="-5.08" y2="78.74" width="0.1524" layer="91"/>
 <junction x="-5.08" y="71.12"/>
-<pinref part="ICL7660" gate="G$1" pin="1"/>
-<wire x1="-5.08" y1="7.62" x2="-5.08" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="2.54" x2="-22.86" y2="2.54" width="0.1524" layer="91"/>
-<wire x1="-22.86" y1="2.54" x2="-22.86" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="ICL7660" gate="G$1" pin="8"/>
-<wire x1="-22.86" y1="7.62" x2="-20.32" y2="7.62" width="0.1524" layer="91"/>
-<junction x="-22.86" y="7.62"/>
-<wire x1="-22.86" y1="7.62" x2="-30.48" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="7.62" x2="-55.88" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-30.48" y1="7.62" x2="-30.48" y2="5.08" width="0.1524" layer="91"/>
-<junction x="-30.48" y="7.62"/>
-<pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="-5.08" y1="78.74" x2="-55.88" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="78.74" x2="-55.88" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="78.74" x2="73.66" y2="78.74" width="0.1524" layer="91"/>
@@ -3860,6 +4035,21 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="73.66" y1="66.04" x2="73.66" y2="78.74" width="0.1524" layer="91"/>
 <junction x="73.66" y="78.74"/>
 <pinref part="+9" gate="G$1" pin="VCC"/>
+<wire x1="-55.88" y1="7.62" x2="-66.04" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="7.62" x2="-66.04" y2="-33.02" width="0.1524" layer="91"/>
+<pinref part="VOLTAGEINVERT" gate="G$1" pin="V+"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="-2.54" y1="-10.16" x2="-12.7" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-10.16" x2="-22.86" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="-25.4" width="0.1524" layer="91"/>
+<junction x="-12.7" y="-10.16"/>
+<wire x1="-12.7" y1="-25.4" x2="-50.8" y2="-25.4" width="0.1524" layer="91"/>
+<pinref part="VOLTAGEINVERT" gate="G$1" pin="NC"/>
+<wire x1="-50.8" y1="-25.4" x2="-50.8" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-2.54" y1="-10.16" x2="7.62" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="-2.54" y="-10.16"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="7.62" y1="-33.02" x2="-66.04" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="L1" gate="G$1" pin="1"/>
@@ -3873,7 +4063,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <segment>
 <pinref part="+2" gate="G$1" pin="VCC"/>
 <pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="78.74" x2="205.74" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="95.758" x2="210.82" y2="95.758" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -3958,6 +4148,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="R15" gate="G$1" pin="2"/>
 <wire x1="157.48" y1="40.64" x2="160.274" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="160.274" y1="40.64" x2="163.576" y2="43.18" width="0.1524" layer="91"/>
+<junction x="160.274" y="40.64"/>
+<pinref part="MICROSTRIPLINE" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -4011,24 +4204,87 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="205.74" y1="66.04" x2="205.74" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="205.74" y1="63.5" x2="205.74" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="53.34" x2="205.74" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="63.5" x2="205.74" y2="63.5" width="0.1524" layer="91"/>
-<junction x="205.74" y="63.5"/>
+<wire x1="210.82" y1="70.358" x2="210.82" y2="60.198" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="60.198" x2="210.82" y2="57.912" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="70.358" x2="210.82" y2="70.358" width="0.1524" layer="91"/>
 <pinref part="C8" gate="G$1" pin="2"/>
-<wire x1="200.66" y1="53.34" x2="205.74" y2="53.34" width="0.1524" layer="91"/>
-<junction x="205.74" y="53.34"/>
+<wire x1="205.74" y1="60.198" x2="210.82" y2="60.198" width="0.1524" layer="91"/>
+<junction x="210.82" y="60.198"/>
 <pinref part="L2" gate="G$1" pin="1"/>
+<pinref part="FERRITEBEADLEAD" gate="G$1" pin="1"/>
+<wire x1="210.82" y1="73.914" x2="210.82" y2="70.358" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$17" class="0">
 <segment>
 <pinref part="C10" gate="G$1" pin="2"/>
 <pinref part="L2" gate="G$1" pin="2"/>
-<wire x1="215.9" y1="30.48" x2="205.74" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="40.64" x2="210.82" y2="42.672" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="OUT"/>
+<wire x1="203.2" y1="40.64" x2="210.82" y2="40.64" width="0.1524" layer="91"/>
+<junction x="210.82" y="40.64"/>
+</segment>
+</net>
+<net name="N$33" class="0">
+<segment>
+<pinref part="C9" gate="G$1" pin="1"/>
+<pinref part="IC1" gate="G$1" pin="+IN"/>
+<wire x1="187.96" y1="43.18" x2="185.42" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$35" class="0">
+<segment>
+<pinref part="C9" gate="G$1" pin="2"/>
+<wire x1="177.8" y1="43.18" x2="173.736" y2="43.18" width="0.1524" layer="91"/>
+<pinref part="MICROSTRIPLINE" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$34" class="0">
+<segment>
+<pinref part="RFOUTPUTANTENNA" gate="G$1" pin="SIGNAL"/>
+<pinref part="MICROSTRIPLN2" gate="G$1" pin="2"/>
+<wire x1="232.918" y1="40.64" x2="237.236" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<wire x1="210.82" y1="85.598" x2="210.82" y2="84.074" width="0.1524" layer="91"/>
+<pinref part="FERRITEBEADLEAD" gate="G$1" pin="2"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="MICROSTRIPLN2" gate="G$1" pin="1"/>
+<wire x1="218.186" y1="40.64" x2="222.758" y2="40.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="VOLTAGEINVERT" gate="G$1" pin="CAP+"/>
+<pinref part="C17" gate="G$1" pin="+"/>
+<wire x1="-50.8" y1="-5.08" x2="-60.96" y2="-5.08" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="VOLTAGEINVERT" gate="G$1" pin="CAP-"/>
+<wire x1="-50.8" y1="-10.16" x2="-53.34" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="-10.16" x2="-53.34" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="C17" gate="G$1" pin="-"/>
+<wire x1="-53.34" y1="-12.7" x2="-60.96" y2="-12.7" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="VOLTAGEINVERT" gate="G$1" pin="VOUT"/>
+<pinref part="C16" gate="G$1" pin="-"/>
+<wire x1="-17.78" y1="0" x2="-22.86" y2="0" width="0.1524" layer="91"/>
+<pinref part="LM1458" gate="G$1" pin="4"/>
+<wire x1="-20.32" y1="43.18" x2="-22.86" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="43.18" x2="-22.86" y2="0" width="0.1524" layer="91"/>
+<junction x="-22.86" y="0"/>
 </segment>
 </net>
 </nets>

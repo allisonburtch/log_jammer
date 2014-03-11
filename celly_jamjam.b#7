@@ -65,8 +65,6 @@
 <layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
-<layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
@@ -296,22 +294,6 @@ Basic small signal diode good up to 200mA. SMB footprint. Common part #: BAS16</
 <rectangle x1="-2.794" y1="-1.0922" x2="-2.2606" y2="1.0922" layer="51"/>
 <rectangle x1="2.2606" y1="-1.0922" x2="2.794" y2="1.0922" layer="51"/>
 </package>
-<package name="0603-RES">
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<rectangle x1="-0.2286" y1="-0.381" x2="0.2286" y2="0.381" layer="21"/>
-</package>
 </packages>
 </library>
 <library name="transistor">
@@ -338,120 +320,6 @@ Basic small signal diode good up to 200mA. SMB footprint. Common part #: BAS16</
 <text x="-0.635" y="0.635" size="1.27" layer="51" ratio="10">2</text>
 <text x="-2.159" y="0" size="1.27" layer="51" ratio="10">3</text>
 <text x="1.143" y="0" size="1.27" layer="51" ratio="10">1</text>
-</package>
-</packages>
-</library>
-<library name="SparkFun-Passives">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="0603">
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-<package name="0603-CAP">
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.5588" layer="21"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-</package>
-</packages>
-</library>
-<library name="SparkFun-Resistors">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="0603-RES">
-<wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="0.983" x2="1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="1.473" y1="-0.983" x2="-1.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-1.473" y1="-0.983" x2="-1.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="-0.356" y1="0.432" x2="0.356" y2="0.432" width="0.1016" layer="51"/>
-<wire x1="-0.356" y1="-0.419" x2="0.356" y2="-0.419" width="0.1016" layer="51"/>
-<smd name="1" x="-0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<smd name="2" x="0.85" y="0" dx="1.1" dy="1" layer="1"/>
-<text x="-0.889" y="0.762" size="0.4064" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.016" y="-1.143" size="0.4064" layer="27" font="vector">&gt;VALUE</text>
-<rectangle x1="-0.8382" y1="-0.4699" x2="-0.3381" y2="0.4801" layer="51"/>
-<rectangle x1="0.3302" y1="-0.4699" x2="0.8303" y2="0.4801" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.3" x2="0.1999" y2="0.3" layer="35"/>
-<rectangle x1="-0.2286" y1="-0.381" x2="0.2286" y2="0.381" layer="21"/>
-</package>
-</packages>
-</library>
-<library name="SparkFun-Capacitors">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find resistors, capacitors, inductors, test points, jumper pads, etc.&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="EIA3216">
-<wire x1="-1" y1="-1.2" x2="-2.5" y2="-1.2" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="-1.2" x2="-2.5" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="1.2" x2="-1" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="1" y1="-1.2" x2="2.1" y2="-1.2" width="0.2032" layer="21"/>
-<wire x1="2.1" y1="-1.2" x2="2.5" y2="-0.8" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="-0.8" x2="2.5" y2="0.8" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="0.8" x2="2.1" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="2.1" y1="1.2" x2="1" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="0.381" y1="1.016" x2="0.381" y2="-1.016" width="0.127" layer="21"/>
-<smd name="C" x="-1.4" y="0" dx="1.6" dy="1.4" layer="1" rot="R90"/>
-<smd name="A" x="1.4" y="0" dx="1.6" dy="1.4" layer="1" rot="R90"/>
-<text x="-2.54" y="1.381" size="0.4064" layer="25">&gt;NAME</text>
-<text x="0.408" y="1.332" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-</library>
-<library name="transistor-small-signal">
-<description>&lt;b&gt;Small Signal Transistors&lt;/b&gt;&lt;p&gt;
-Packages from :&lt;br&gt;
-www.infineon.com; &lt;br&gt;
-www.semiconductors.com;&lt;br&gt;
-www.irf.com&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="SOT23">
-<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
-<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
 </packages>
 </library>
@@ -641,7 +509,8 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="VOLTAGEINVERT" library="maxim" package="SO08" value="ICL7660CSA" x="-17.78" y="5.08">
+<element name="IC1" library="linear" package="SO08" value="LM1458D" x="-36.83" y="3.81"/>
+<element name="IC2" library="maxim" package="SO08" value="ICL7660CSA" x="-17.78" y="5.08">
 <attribute name="OC_NEWARK" value="34C3732" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="ICL7660CSA" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="MAXIM" x="0" y="0" size="1.778" layer="27" display="off"/>
@@ -653,68 +522,25 @@ design rules under a new name.</description>
 <attribute name="MF" value="" x="0" y="0" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="0" y="0" size="1.778" layer="27" display="off"/>
 </element>
-<element name="NOISEGEN" library="linear" package="SO08" value="LM386M-1" x="-27.94" y="3.81"/>
+<element name="IC4" library="linear" package="SO08" value="LM386M-1" x="-27.94" y="3.81"/>
 <element name="U$1" library="SparkFun-DiscreteSemi" package="TO-92" value="TRANSISTOR_NPN_2PTH" x="-24.13" y="34.29"/>
 <element name="D1" library="SparkFun-DiscreteSemi" package="DIODE-1N4148" value="" x="-17.78" y="39.37"/>
 <element name="T1" library="transistor" package="TO92" value="2N3904" x="-38.1" y="34.29"/>
 <element name="U$2" library="SparkFun-DiscreteSemi" package="SMB-DIODE" value="DIODE-ZENERSMB" x="-27.94" y="27.94"/>
-<element name="L1" library="SparkFun-Passives" package="0603" value="" x="-39.37" y="-2.54"/>
-<element name="R1" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-5.08"/>
-<element name="R2" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-7.62"/>
-<element name="R3" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-10.16"/>
-<element name="R4" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-12.7"/>
-<element name="R5" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-15.24"/>
-<element name="R6" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-17.78"/>
-<element name="R7" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-20.32"/>
-<element name="R8" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-22.86"/>
-<element name="R9" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-25.4"/>
-<element name="R10" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-27.94"/>
-<element name="R11" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-30.48"/>
-<element name="R12" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-33.02"/>
-<element name="R13" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-35.56"/>
-<element name="R14" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-38.1"/>
-<element name="R15" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-40.64"/>
-<element name="R16" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-43.18"/>
-<element name="R17" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-45.72"/>
-<element name="R18" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-48.26"/>
-<element name="R19" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-50.8"/>
-<element name="R20" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-53.34"/>
-<element name="R21" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-55.88"/>
-<element name="R22" library="SparkFun-Resistors" package="0603-RES" value="" x="-39.37" y="-58.42"/>
-<element name="NOISEAP" library="SparkFun-DiscreteSemi" package="0603-RES" value="" x="-39.37" y="-60.96"/>
-<element name="SWEEPAMP" library="SparkFun-DiscreteSemi" package="0603-RES" value="" x="-39.37" y="-63.5"/>
-<element name="VCOOFFSET" library="SparkFun-DiscreteSemi" package="0603-RES" value="" x="-39.37" y="-66.04"/>
-<element name="Z4" library="SparkFun-DiscreteSemi" package="0603-RES" value="" x="-39.37" y="-68.58"/>
-<element name="C1" library="SparkFun-Passives" package="0603-CAP" value="" x="-39.37" y="-71.12"/>
-<element name="C2" library="SparkFun-Passives" package="0603-CAP" value="" x="-39.37" y="-73.66"/>
-<element name="C3" library="SparkFun-Passives" package="0603-CAP" value="" x="-39.37" y="-76.2"/>
-<element name="C4" library="SparkFun-Passives" package="0603-CAP" value="" x="-39.37" y="-78.74"/>
-<element name="C5" library="SparkFun-Passives" package="0603-CAP" value="" x="-39.37" y="-81.28"/>
-<element name="C6" library="SparkFun-Passives" package="0603-CAP" value="" x="-39.37" y="-83.82"/>
-<element name="C7" library="SparkFun-Passives" package="0603-CAP" value="" x="-39.37" y="-86.36"/>
-<element name="C8" library="SparkFun-Passives" package="0603-CAP" value="" x="-39.37" y="-88.9"/>
-<element name="C9" library="SparkFun-Passives" package="0603-CAP" value="" x="-39.37" y="-91.44"/>
-<element name="C10" library="SparkFun-Passives" package="0603-CAP" value="" x="-39.37" y="-93.98"/>
-<element name="C11" library="SparkFun-Passives" package="0603-CAP" value="" x="-39.37" y="-96.52"/>
-<element name="C12" library="SparkFun-Passives" package="0603-CAP" value="" x="-39.37" y="-99.06"/>
-<element name="C13" library="SparkFun-Passives" package="0603-CAP" value="" x="-39.37" y="-101.6"/>
-<element name="C14" library="SparkFun-Passives" package="0603-CAP" value="" x="-39.37" y="-104.14"/>
-<element name="C15" library="SparkFun-Passives" package="0603-CAP" value="" x="-39.37" y="-106.68"/>
-<element name="C16" library="SparkFun-Capacitors" package="EIA3216" value="" x="-38.1" y="-110.49"/>
-<element name="C17" library="SparkFun-Capacitors" package="EIA3216" value="" x="-38.1" y="-114.3"/>
-<element name="C18" library="SparkFun-Capacitors" package="EIA3216" value="" x="-38.1" y="-118.11"/>
-<element name="C19" library="SparkFun-Capacitors" package="EIA3216" value="" x="-38.1" y="-121.92"/>
-<element name="C20" library="SparkFun-Capacitors" package="EIA3216" value="" x="-38.1" y="-125.73"/>
-<element name="C21" library="SparkFun-Capacitors" package="EIA3216" value="" x="-38.1" y="-129.54"/>
-<element name="SHOULDBEAG603-86" library="transistor-small-signal" package="SOT23" value="MMBFJ3" x="-38.1" y="-134.62"/>
-<element name="TRIWAVGEN" library="linear" package="SO08" value="LM1458D" x="-45.72" y="-133.35"/>
 </elements>
 <signals>
+<signal name="V+">
+<contactref element="IC1" pad="8"/>
+<contactref element="IC2" pad="8"/>
+<wire x1="-19.685" y1="8.1534" x2="-38.735" y2="6.41" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="V-">
+<contactref element="IC1" pad="4"/>
+</signal>
 <signal name="GND">
-<contactref element="VOLTAGEINVERT" pad="3"/>
+<contactref element="IC2" pad="3"/>
 <contactref element="IC3" pad="15"/>
-<contactref element="NOISEGEN" pad="4"/>
-<contactref element="VOLTAGEINVERT" pad="3"/>
+<contactref element="IC4" pad="4"/>
 <wire x1="-17.145" y1="2.0066" x2="-26.035" y2="1.21" width="0" layer="19" extent="1-1"/>
 <wire x1="-19.685" y1="18.796" x2="-17.145" y2="2.0066" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -722,33 +548,7 @@ design rules under a new name.</description>
 <contactref element="IC3" pad="20"/>
 </signal>
 <signal name="VS">
-<contactref element="NOISEGEN" pad="6"/>
-</signal>
-<signal name="N$1">
-<contactref element="VOLTAGEINVERT" pad="1"/>
-<contactref element="VOLTAGEINVERT" pad="8"/>
-<wire x1="-19.685" y1="8.1534" x2="-19.685" y2="2.0066" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$2">
-<contactref element="R20" pad="2"/>
-<contactref element="R21" pad="2"/>
-<wire x1="-38.52" y1="-53.34" x2="-38.52" y2="-55.88" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$3">
-<contactref element="R20" pad="1"/>
-<contactref element="R21" pad="1"/>
-<wire x1="-40.22" y1="-53.34" x2="-40.22" y2="-55.88" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="V+">
-<contactref element="TRIWAVGEN" pad="8"/>
-</signal>
-<signal name="V-">
-<contactref element="TRIWAVGEN" pad="4"/>
-</signal>
-<signal name="N$4">
-<contactref element="R1" pad="2"/>
-<contactref element="TRIWAVGEN" pad="3"/>
-<wire x1="-38.52" y1="-5.08" x2="-45.085" y2="-135.95" width="0" layer="19" extent="1-1"/>
+<contactref element="IC4" pad="6"/>
 </signal>
 </signals>
 </board>
