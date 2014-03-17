@@ -3066,158 +3066,6 @@ These are standard SMD and PTH capacitors. Normally 10uF, 47uF, and 100uF in ele
 </deviceset>
 </devicesets>
 </library>
-<library name="SparkFun-FreqCtrl">
-<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
-In this library you'll find crystals and oscillators and other things that go "tick".&lt;br&gt;&lt;br&gt;
-We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
-&lt;br&gt;&lt;br&gt;
-&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
-<packages>
-<package name="CRYSTAL-SMD-7X5">
-<wire x1="1.402" y1="-0.4094" x2="1.402" y2="-0.6094" width="0.127" layer="21"/>
-<wire x1="-0.889" y1="1.27" x2="-0.889" y2="2.921" width="0.2032" layer="21"/>
-<wire x1="5.969" y1="1.27" x2="5.969" y2="2.921" width="0.2032" layer="21"/>
-<wire x1="3.937" y1="5.207" x2="1.143" y2="5.207" width="0.2032" layer="21"/>
-<wire x1="3.937" y1="-1.016" x2="1.143" y2="-1.016" width="0.2032" layer="21"/>
-<circle x="1.402" y="-0.5094" radius="0.3" width="0.127" layer="21"/>
-<circle x="1.402" y="-0.5094" radius="0.2236" width="0.127" layer="21"/>
-<circle x="1.402" y="-0.5094" radius="0.1" width="0.127" layer="21"/>
-<smd name="P$1" x="0" y="0" dx="2" dy="1.8" layer="1" rot="R90"/>
-<smd name="P$2" x="5.08" y="0" dx="2" dy="1.8" layer="1" rot="R90"/>
-<smd name="P$3" x="5.08" y="4.2" dx="2" dy="1.8" layer="1" rot="R90"/>
-<smd name="P$4" x="0" y="4.2" dx="2" dy="1.8" layer="1" rot="R90"/>
-<text x="-1.016" y="5.842" size="1.27" layer="25" ratio="15">&gt;Name</text>
-<text x="-1.016" y="-2.921" size="1.27" layer="27" ratio="15">&gt;Value</text>
-</package>
-<package name="CRYSTAL-SMD-7.5X5.2-6PIN">
-<description>FXO-HC73 Series Oscillator. 7.5x5.2mm 6-pin package</description>
-<wire x1="3.75" y1="2.6" x2="-3.75" y2="2.6" width="0.127" layer="51"/>
-<wire x1="-3.75" y1="2.6" x2="-3.75" y2="-2.6" width="0.127" layer="51"/>
-<wire x1="-3.75" y1="-2.6" x2="3.75" y2="-2.6" width="0.127" layer="51"/>
-<wire x1="3.75" y1="-2.6" x2="3.75" y2="2.6" width="0.127" layer="51"/>
-<wire x1="-3.8" y1="2.4" x2="-3.8" y2="-2.4" width="0.127" layer="21"/>
-<wire x1="3.8" y1="2.4" x2="3.8" y2="-2.4" width="0.127" layer="21"/>
-<circle x="-3" y="-0.5" radius="0.3605" width="0.127" layer="21"/>
-<smd name="2" x="2.54" y="-2.1" dx="2" dy="1.8" layer="1" rot="R90"/>
-<smd name="3" x="2.54" y="2.1" dx="2" dy="1.8" layer="1" rot="R90"/>
-<smd name="4" x="-2.54" y="2.1" dx="2" dy="1.8" layer="1" rot="R90"/>
-<smd name="1" x="-2.54" y="-2.1" dx="2" dy="1.8" layer="1" rot="R90"/>
-<smd name="NC0" x="0" y="-2.1" dx="2" dy="1.4" layer="1" rot="R90"/>
-<smd name="NC1" x="0" y="2.1" dx="2" dy="1.4" layer="1" rot="R90"/>
-<text x="-3.6" y="3.4" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-3.7" y="-3.8" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="CRYSTAL-SMD-5X3">
-<wire x1="-0.6" y1="1.6" x2="0.6" y2="1.6" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="0.3" x2="2.5" y2="-0.3" width="0.2032" layer="21"/>
-<wire x1="0.6" y1="-1.6" x2="-0.6" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="0.3" x2="-2.5" y2="-0.3" width="0.2032" layer="21"/>
-<smd name="1" x="-1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
-<smd name="3" x="1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
-<smd name="4" x="-1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
-<smd name="2" x="1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
-<text x="-2.54" y="1.905" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-<package name="CRYSTAL-OSC-SMD-5X3">
-<wire x1="-0.6" y1="1.6" x2="0.6" y2="1.6" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="0.3" x2="2.5" y2="-0.3" width="0.2032" layer="21"/>
-<wire x1="0.6" y1="-1.6" x2="-0.6" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="0.3" x2="-2.5" y2="-0.3" width="0.2032" layer="21"/>
-<circle x="-3.4986" y="-1.2794" radius="0.2653" width="0.127" layer="21"/>
-<circle x="-3.4986" y="-1.2794" radius="0.1456" width="0.127" layer="21"/>
-<circle x="-3.4986" y="-1.2794" radius="0.0284" width="0.127" layer="21"/>
-<smd name="1" x="-1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
-<smd name="3" x="1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
-<smd name="4" x="-1.85" y="1.15" dx="1.9" dy="1.1" layer="1"/>
-<smd name="2" x="1.85" y="-1.15" dx="1.9" dy="1.1" layer="1"/>
-<text x="-2.54" y="1.905" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="0.4064" layer="27">&gt;VALUE</text>
-</package>
-</packages>
-<symbols>
-<symbol name="OSCILLATOR">
-<wire x1="-7.62" y1="-5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
-<text x="-7.62" y="5.842" size="1.27" layer="95">&gt;Name</text>
-<text x="-7.62" y="-7.366" size="1.27" layer="96">&gt;Value</text>
-<pin name="EN" x="-12.7" y="-2.54" visible="pin" length="middle"/>
-<pin name="GND" x="12.7" y="-2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="OUT" x="12.7" y="2.54" visible="pin" length="middle" rot="R180"/>
-<pin name="VCC" x="-12.7" y="2.54" visible="pin" length="middle"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="OSCILLATOR" prefix="U">
-<description>Generic 5x3 and 7x5 oscillators</description>
-<gates>
-<gate name="G$1" symbol="OSCILLATOR" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SMD" package="CRYSTAL-SMD-7X5">
-<connects>
-<connect gate="G$1" pin="EN" pad="P$1"/>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="OUT" pad="P$3"/>
-<connect gate="G$1" pin="VCC" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SMD6" package="CRYSTAL-SMD-7.5X5.2-6PIN">
-<connects>
-<connect gate="G$1" pin="EN" pad="1"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="5X3" package="CRYSTAL-SMD-5X3">
-<connects>
-<connect gate="G$1" pin="EN" pad="1"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="5X3-PIN1-INDICATED" package="CRYSTAL-OSC-SMD-5X3">
-<connects>
-<connect gate="G$1" pin="EN" pad="1"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-<connect gate="G$1" pin="VCC" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="XTAL-11225" package="CRYSTAL-SMD-7X5">
-<connects>
-<connect gate="G$1" pin="EN" pad="P$1"/>
-<connect gate="G$1" pin="GND" pad="P$2"/>
-<connect gate="G$1" pin="OUT" pad="P$3"/>
-<connect gate="G$1" pin="VCC" pad="P$4"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="PROD_ID" value="XTAL-11225"/>
-<attribute name="VALUE" value="16MHz"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="burr-brown">
 <description>&lt;b&gt;Burr-Brown Components&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
@@ -3487,6 +3335,94 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="crystec_vco">
+<packages>
+<package name="CVCO55CL">
+<wire x1="0" y1="0" x2="0" y2="12.7" width="0.127" layer="48"/>
+<wire x1="0" y1="12.7" x2="12.7" y2="12.7" width="0.127" layer="48"/>
+<wire x1="12.7" y1="12.7" x2="12.7" y2="0" width="0.127" layer="48"/>
+<wire x1="12.7" y1="0" x2="0.127" y2="0" width="0.127" layer="48"/>
+<wire x1="0" y1="0" x2="0.127" y2="0" width="0.127" layer="48"/>
+<circle x="0.635" y="0.635" radius="0.2839" width="0.127" layer="48"/>
+<smd name="P$1" x="2.921" y="0" dx="1.32" dy="1.32" layer="1" rot="R90"/>
+<smd name="P$2" x="5.461" y="0" dx="1.32" dy="1.32" layer="1"/>
+<smd name="P$3" x="8.001" y="0" dx="1.32" dy="1.32" layer="1"/>
+<smd name="P$4" x="10.541" y="0" dx="1.32" dy="1.32" layer="1"/>
+<smd name="P$5" x="12.7" y="2.667" dx="1.32" dy="1.32" layer="1"/>
+<smd name="P$6" x="12.7" y="5.207" dx="1.32" dy="1.32" layer="1"/>
+<smd name="P$7" x="12.7" y="7.747" dx="1.32" dy="1.32" layer="1"/>
+<smd name="P$8" x="12.7" y="10.287" dx="1.32" dy="1.32" layer="1"/>
+<smd name="P$9" x="9.652" y="12.7" dx="1.32" dy="1.32" layer="1"/>
+<smd name="P$10" x="7.112" y="12.7" dx="1.32" dy="1.32" layer="1"/>
+<smd name="P$11" x="4.572" y="12.7" dx="1.32" dy="1.32" layer="1"/>
+<smd name="P$12" x="2.032" y="12.7" dx="1.32" dy="1.32" layer="1"/>
+<smd name="P$13" x="0" y="10.541" dx="1.32" dy="1.32" layer="1"/>
+<smd name="P$14" x="0" y="8.001" dx="1.32" dy="1.32" layer="1"/>
+<smd name="P$15" x="0" y="5.461" dx="1.32" dy="1.32" layer="1"/>
+<smd name="P$16" x="0" y="2.921" dx="1.32" dy="1.32" layer="1"/>
+</package>
+</packages>
+<symbols>
+<symbol name="CVCO55CL">
+<wire x1="-20.32" y1="12.7" x2="-20.32" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-20.32" y1="-5.08" x2="15.24" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="15.24" y1="-5.08" x2="15.24" y2="12.7" width="0.254" layer="94"/>
+<wire x1="15.24" y1="12.7" x2="-20.32" y2="12.7" width="0.254" layer="94"/>
+<text x="-17.78" y="10.16" size="1.27" layer="94">CVCO55CL</text>
+<pin name="RF" x="20.32" y="5.08" length="middle" rot="R180"/>
+<pin name="VT" x="-25.4" y="5.08" length="middle"/>
+<pin name="GND8" x="0" y="-10.16" length="middle" rot="R90"/>
+<pin name="VCC" x="0" y="17.78" length="middle" rot="R270"/>
+<pin name="GND7" x="-2.54" y="-10.16" length="middle" rot="R90"/>
+<pin name="GND6" x="-5.08" y="-10.16" length="middle" rot="R90"/>
+<pin name="GND5" x="-7.62" y="-10.16" length="middle" rot="R90"/>
+<pin name="GND4" x="-10.16" y="-10.16" length="middle" rot="R90"/>
+<pin name="GND3" x="-12.7" y="-10.16" length="middle" rot="R90"/>
+<pin name="GND2" x="-15.24" y="-10.16" length="middle" rot="R90"/>
+<pin name="GND1" x="-17.78" y="-10.16" length="middle" rot="R90"/>
+<pin name="GND9" x="2.54" y="-10.16" length="middle" rot="R90"/>
+<pin name="GND10" x="5.08" y="-10.16" length="middle" rot="R90"/>
+<pin name="GND11" x="7.62" y="-10.16" length="middle" rot="R90"/>
+<pin name="GND12" x="10.16" y="-10.16" length="middle" rot="R90"/>
+<pin name="GND13" x="12.7" y="-10.16" length="middle" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CVCO55CL">
+<description>Volatage Controlled Oscillator - VCO
+Vendor: CRYSTEK MICROWAVE
+Series: CVCO-55CL</description>
+<gates>
+<gate name="U$1" symbol="CVCO55CL" x="22.86" y="7.62"/>
+</gates>
+<devices>
+<device name="" package="CVCO55CL">
+<connects>
+<connect gate="U$1" pin="GND1" pad="P$3"/>
+<connect gate="U$1" pin="GND10" pad="P$12"/>
+<connect gate="U$1" pin="GND11" pad="P$13"/>
+<connect gate="U$1" pin="GND12" pad="P$15"/>
+<connect gate="U$1" pin="GND13" pad="P$16"/>
+<connect gate="U$1" pin="GND2" pad="P$4"/>
+<connect gate="U$1" pin="GND3" pad="P$5"/>
+<connect gate="U$1" pin="GND4" pad="P$6"/>
+<connect gate="U$1" pin="GND5" pad="P$7"/>
+<connect gate="U$1" pin="GND6" pad="P$8"/>
+<connect gate="U$1" pin="GND7" pad="P$9"/>
+<connect gate="U$1" pin="GND8" pad="P$1"/>
+<connect gate="U$1" pin="GND9" pad="P$11"/>
+<connect gate="U$1" pin="RF" pad="P$10"/>
+<connect gate="U$1" pin="VCC" pad="P$14"/>
+<connect gate="U$1" pin="VT" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3509,7 +3445,6 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="10uH"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603-RES" value="10k"/>
 <part name="R2" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603-RES" value="27k"/>
 <part name="R3" library="SparkFun-Resistors" deviceset="RESISTOR" device="0603-RES" value="10k"/>
@@ -3530,8 +3465,6 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <part name="C2" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
 <part name="C3" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value=".1uF"/>
 <part name="C4" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
-<part name="C5" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
-<part name="C6" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
 <part name="C7" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.01uF"/>
 <part name="C8" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="68pF"/>
 <part name="C9" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="68pF"/>
@@ -3568,10 +3501,7 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-Aesthetics" deviceset="VCC" device="" value="+9"/>
-<part name="U1" library="SparkFun-FreqCtrl" deviceset="OSCILLATOR" device="5X3" value="M3500"/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND21" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -3579,7 +3509,6 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <part name="GND24" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="+1" library="SparkFun-Aesthetics" deviceset="VCC" device="" value="+12"/>
 <part name="+2" library="SparkFun-Aesthetics" deviceset="VCC" device="" value="+9"/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND27" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -3594,6 +3523,13 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <part name="MICROSTRIPLINE1" library="inductors" deviceset="BLM15H" device="" technology="B121SN1" value="50 Ohm"/>
 <part name="C10" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="68pF"/>
 <part name="Q1" library="transistor-fet" deviceset="BF245" device="" value="mpf102"/>
+<part name="U$1" library="crystec_vco" deviceset="CVCO55CL" device=""/>
+<part name="C24" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
+<part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C6" library="SparkFun-Passives" deviceset="CAP" device="0603-CAP" value="0.1uF"/>
+<part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device="" value="+12"/>
+<part name="GND30" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="L1" library="SparkFun-Passives" deviceset="INDUCTOR" device="0603" value="10nh"/>
 </parts>
 <sheets>
 <sheet>
@@ -3602,7 +3538,7 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <instances>
 <instance part="VOLTAGEINVERT" gate="G$1" x="-35.56" y="-7.62"/>
 <instance part="NOISEGEN" gate="G$1" x="116.84" y="5.08" rot="R180"/>
-<instance part="D1" gate="G$1" x="114.3" y="40.64" rot="R270"/>
+<instance part="D1" gate="G$1" x="111.76" y="45.72" rot="R270"/>
 <instance part="T1" gate="G1" x="160.02" y="5.08" rot="R90"/>
 <instance part="U$2" gate="G$1" x="175.26" y="-10.16" rot="R90"/>
 <instance part="GND1" gate="1" x="-17.78" y="-15.24" rot="R90"/>
@@ -3612,7 +3548,6 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <instance part="GND4" gate="1" x="0" y="27.94"/>
 <instance part="GND5" gate="1" x="0" y="2.54" rot="R180"/>
 <instance part="GND6" gate="1" x="76.2" y="-7.62"/>
-<instance part="L1" gate="G$1" x="136.906" y="92.964"/>
 <instance part="R1" gate="G$1" x="0" y="38.1" rot="R90"/>
 <instance part="R2" gate="G$1" x="-27.94" y="40.64" rot="R90"/>
 <instance part="R3" gate="G$1" x="-2.54" y="58.42" rot="R90"/>
@@ -3620,9 +3555,9 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <instance part="R8" gate="G$1" x="73.66" y="60.96" rot="R90"/>
 <instance part="R9" gate="G$1" x="73.66" y="35.56" rot="R90"/>
 <instance part="R10" gate="G$1" x="104.14" y="48.26" rot="R90"/>
-<instance part="R13" gate="G$1" x="152.4" y="45.72"/>
-<instance part="R14" gate="G$1" x="146.558" y="48.26" rot="R90"/>
-<instance part="R15" gate="G$1" x="159.766" y="53.34" rot="R270"/>
+<instance part="R13" gate="G$1" x="162.56" y="43.18" rot="R270"/>
+<instance part="R14" gate="G$1" x="167.64" y="51.562"/>
+<instance part="R15" gate="G$1" x="172.72" y="35.814" rot="R180"/>
 <instance part="R16" gate="G$1" x="218.44" y="90.678" rot="R90"/>
 <instance part="R17" gate="G$1" x="175.26" y="12.7" rot="R90"/>
 <instance part="R18" gate="G$1" x="147.32" y="-2.54" rot="R90"/>
@@ -3633,11 +3568,9 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <instance part="C2" gate="G$1" x="0" y="-7.62" rot="R180"/>
 <instance part="C3" gate="G$1" x="12.7" y="45.72"/>
 <instance part="C4" gate="G$1" x="86.36" y="43.18" rot="R90"/>
-<instance part="C5" gate="G$1" x="134.366" y="102.362" rot="R90"/>
-<instance part="C6" gate="G$1" x="132.08" y="73.914" rot="R270"/>
 <instance part="C7" gate="G$1" x="203.2" y="75.438" rot="R90"/>
 <instance part="C8" gate="G$1" x="203.2" y="55.118" rot="R90"/>
-<instance part="C9" gate="G$1" x="180.34" y="43.18" rot="R270"/>
+<instance part="C9" gate="G$1" x="180.34" y="25.4" rot="R270"/>
 <instance part="C11" gate="G$1" x="187.96" y="15.24" rot="R180"/>
 <instance part="C12" gate="G$1" x="165.1" y="-7.62" rot="R90"/>
 <instance part="C13" gate="G$1" x="142.24" y="7.62" rot="R270"/>
@@ -3647,7 +3580,7 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <instance part="C17" gate="G$1" x="-60.96" y="-7.62"/>
 <instance part="C18" gate="G$1" x="81.28" y="83.82" rot="R180"/>
 <instance part="C19" gate="G$1" x="-12.7" y="83.82" rot="R180"/>
-<instance part="C20" gate="G$1" x="134.62" y="81.28" rot="R270"/>
+<instance part="C20" gate="G$1" x="132.08" y="106.68" rot="R270"/>
 <instance part="C21" gate="G$1" x="111.76" y="-7.62" rot="R270"/>
 <instance part="TRIWAVGEN" gate="A" x="-86.36" y="88.9"/>
 <instance part="TRIWAVGEN" gate="B" x="-66.04" y="86.36"/>
@@ -3672,18 +3605,14 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <instance part="GND15" gate="1" x="66.04" y="-7.62"/>
 <instance part="GND16" gate="1" x="134.62" y="-7.62"/>
 <instance part="SUPPLY4" gate="G$1" x="119.38" y="-20.32" rot="R180"/>
-<instance part="U1" gate="G$1" x="137.16" y="55.88" rot="R270"/>
-<instance part="GND17" gate="1" x="124.206" y="81.28" rot="R270"/>
-<instance part="GND19" gate="1" x="124.46" y="102.362" rot="R270"/>
-<instance part="GND18" gate="1" x="124.206" y="73.914" rot="R270"/>
-<instance part="GND20" gate="1" x="149.098" y="57.15" rot="R180"/>
-<instance part="GND21" gate="1" x="159.766" y="64.262" rot="R180"/>
+<instance part="GND17" gate="1" x="116.586" y="106.68" rot="R270"/>
+<instance part="GND20" gate="1" x="176.53" y="46.482" rot="R90"/>
+<instance part="GND21" gate="1" x="181.102" y="35.814" rot="R90"/>
 <instance part="GND22" gate="1" x="73.66" y="25.4"/>
-<instance part="GND23" gate="1" x="114.3" y="53.34" rot="R180"/>
-<instance part="GND24" gate="1" x="132.08" y="35.56"/>
+<instance part="GND23" gate="1" x="111.76" y="50.8" rot="R180"/>
+<instance part="GND24" gate="1" x="134.62" y="48.26"/>
 <instance part="GND25" gate="1" x="81.28" y="93.98" rot="R180"/>
 <instance part="GND26" gate="1" x="99.06" y="53.34"/>
-<instance part="+1" gate="G$1" x="139.954" y="109.982" rot="R270"/>
 <instance part="+2" gate="G$1" x="198.12" y="95.758" rot="R90"/>
 <instance part="GND3" gate="1" x="190.5" y="70.358" rot="R270"/>
 <instance part="GND27" gate="1" x="190.5" y="60.198" rot="R270"/>
@@ -3694,10 +3623,17 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <instance part="GND31" gate="1" x="239.776" y="33.528"/>
 <instance part="RFOUTPUTANTENNA" gate="G$1" x="237.236" y="63.5"/>
 <instance part="FERRITEBEADLEAD" gate="G$1" x="215.9" y="76.454" rot="R90"/>
-<instance part="MICROSTRIPLINE" gate="G$1" x="168.656" y="43.18"/>
+<instance part="MICROSTRIPLINE" gate="G$1" x="168.656" y="25.4"/>
 <instance part="MICROSTRIPLINE1" gate="G$1" x="232.156" y="40.64"/>
 <instance part="C10" gate="G$1" x="218.44" y="40.64" rot="R270"/>
 <instance part="Q1" gate="G$1" x="68.58" y="50.8"/>
+<instance part="U$1" gate="U$1" x="142.24" y="60.96"/>
+<instance part="C24" gate="G$1" x="129.54" y="81.28" rot="R90"/>
+<instance part="GND18" gate="1" x="119.38" y="81.28" rot="R270"/>
+<instance part="C6" gate="G$1" x="132.08" y="116.84" rot="R90"/>
+<instance part="SUPPLY2" gate="G$1" x="149.86" y="119.38" rot="R270"/>
+<instance part="GND30" gate="1" x="116.84" y="116.84" rot="R270"/>
+<instance part="L1" gate="G$1" x="144.78" y="96.52"/>
 </instances>
 <busses>
 </busses>
@@ -3785,29 +3721,14 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <wire x1="134.62" y1="-5.08" x2="127" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C5" gate="G$1" pin="1"/>
-<pinref part="GND19" gate="1" pin="GND"/>
-<wire x1="127" y1="102.362" x2="129.286" y2="102.362" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C20" gate="G$1" pin="-"/>
-<pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="129.54" y1="81.28" x2="126.746" y2="81.28" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="129.54" y1="73.914" x2="126.746" y2="73.914" width="0.1524" layer="91"/>
-<pinref part="C6" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="R14" gate="G$1" pin="2"/>
-<wire x1="146.558" y1="53.34" x2="149.098" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="51.562" x2="173.99" y2="46.482" width="0.1524" layer="91"/>
 <pinref part="GND20" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND21" gate="1" pin="GND"/>
 <pinref part="R15" gate="G$1" pin="1"/>
-<wire x1="159.766" y1="58.42" x2="159.766" y2="61.722" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="35.814" x2="178.562" y2="35.814" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R9" gate="G$1" pin="1"/>
@@ -3817,12 +3738,6 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <segment>
 <pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="GND23" gate="1" pin="GND"/>
-<wire x1="114.3" y1="43.18" x2="114.3" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U1" gate="G$1" pin="GND"/>
-<pinref part="GND24" gate="1" pin="GND"/>
-<wire x1="134.62" y1="43.18" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C18" gate="G$1" pin="-"/>
@@ -3861,6 +3776,25 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <pinref part="VOLTAGEINVERT" gate="G$1" pin="GND"/>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="-20.32" y1="-15.24" x2="-22.86" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C20" gate="G$1" pin="-"/>
+<wire x1="127" y1="106.68" x2="119.126" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C24" gate="G$1" pin="1"/>
+<pinref part="GND18" gate="1" pin="GND"/>
+<wire x1="124.46" y1="81.28" x2="121.92" y2="81.28" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C6" gate="G$1" pin="1"/>
+<pinref part="GND30" gate="1" pin="GND"/>
+<wire x1="119.38" y1="116.84" x2="127" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="U$1" pin="GND5"/>
+<pinref part="GND24" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -4055,18 +3989,23 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <wire x1="7.62" y1="-33.02" x2="-66.04" y2="-33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="L1" gate="G$1" pin="1"/>
-<pinref part="C5" gate="G$1" pin="2"/>
-<wire x1="136.906" y1="100.584" x2="136.906" y2="102.362" width="0.1524" layer="91"/>
-<wire x1="136.906" y1="102.362" x2="136.906" y2="109.982" width="0.1524" layer="91"/>
-<junction x="136.906" y="102.362"/>
-<wire x1="136.906" y1="109.982" x2="139.954" y2="109.982" width="0.1524" layer="91"/>
-<pinref part="+1" gate="G$1" pin="VCC"/>
-</segment>
-<segment>
 <pinref part="+2" gate="G$1" pin="VCC"/>
 <pinref part="R16" gate="G$1" pin="2"/>
 <wire x1="198.12" y1="95.758" x2="218.44" y2="95.758" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="SUPPLY2" gate="G$1" pin="VCC"/>
+<wire x1="149.86" y1="119.38" x2="144.78" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="L1" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="119.38" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="116.84" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="106.68" x2="144.78" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="116.84" x2="144.78" y2="116.84" width="0.1524" layer="91"/>
+<junction x="144.78" y="116.84"/>
+<pinref part="C20" gate="G$1" pin="+"/>
+<wire x1="134.62" y1="106.68" x2="144.78" y2="106.68" width="0.1524" layer="91"/>
+<junction x="144.78" y="106.68"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -4131,35 +4070,20 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <junction x="119.38" y="-5.08"/>
 </segment>
 </net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="C6" gate="G$1" pin="1"/>
-<pinref part="C20" gate="G$1" pin="+"/>
-<wire x1="137.16" y1="73.914" x2="139.7" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="136.906" y1="85.344" x2="137.16" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="137.16" y1="73.914" x2="137.16" y2="81.28" width="0.1524" layer="91"/>
-<junction x="137.16" y="81.28"/>
-<pinref part="L1" gate="G$1" pin="2"/>
-<pinref part="U1" gate="G$1" pin="VCC"/>
-</segment>
-</net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="R13" gate="G$1" pin="2"/>
 <pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="157.48" y1="45.72" x2="159.766" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="159.766" y1="48.26" x2="163.576" y2="43.18" width="0.1524" layer="91"/>
-<junction x="159.766" y="48.26"/>
+<wire x1="162.56" y1="38.1" x2="167.64" y2="35.814" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="35.814" x2="163.576" y2="25.4" width="0.1524" layer="91"/>
+<junction x="167.64" y="35.814"/>
 <pinref part="MICROSTRIPLINE" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
-<pinref part="U1" gate="G$1" pin="OUT"/>
 <pinref part="R14" gate="G$1" pin="1"/>
-<wire x1="147.32" y1="45.72" x2="146.558" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="146.558" y1="43.18" x2="139.7" y2="43.18" width="0.1524" layer="91"/>
-<junction x="146.558" y="43.18"/>
+<wire x1="162.56" y1="48.26" x2="162.56" y2="51.562" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -4168,14 +4092,13 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="88.9" y1="43.18" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-<wire x1="104.14" y1="43.18" x2="114.3" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="43.18" x2="111.76" y2="43.18" width="0.1524" layer="91"/>
 <junction x="104.14" y="43.18"/>
 <pinref part="D1" gate="G$1" pin="C"/>
-<junction x="114.3" y="38.1"/>
-<wire x1="114.3" y1="38.1" x2="124.46" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="124.46" y1="43.18" x2="124.46" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="EN"/>
-<wire x1="124.46" y1="66.04" x2="134.62" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="43.18" x2="116.84" y2="43.18" width="0.1524" layer="91"/>
+<junction x="111.76" y="43.18"/>
+<pinref part="U$1" gate="U$1" pin="VT"/>
+<wire x1="116.84" y1="43.18" x2="116.84" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -4203,13 +4126,13 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
 <pinref part="IC1" gate="G$1" pin="+IN"/>
-<wire x1="187.96" y1="43.18" x2="185.42" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="43.18" x2="185.42" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$35" class="0">
 <segment>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="177.8" y1="43.18" x2="173.736" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="177.8" y1="25.4" x2="173.736" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="MICROSTRIPLINE" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -4294,6 +4217,28 @@ http://www.onsemi.com/pub/Collateral/BF245A-D.PDF</description>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <wire x1="73.66" y1="55.88" x2="73.66" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$37" class="0">
+<segment>
+<pinref part="C24" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="81.28" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="81.28" x2="132.08" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="81.28" x2="129.54" y2="81.28" width="0.1524" layer="91"/>
+<junction x="132.08" y="81.28"/>
+<wire x1="144.78" y1="81.28" x2="144.78" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="L1" gate="G$1" pin="2"/>
+<wire x1="144.78" y1="88.9" x2="144.78" y2="88.392" width="0.1524" layer="91"/>
+<junction x="144.78" y="88.9"/>
+<pinref part="U$1" gate="U$1" pin="VCC"/>
+<wire x1="142.24" y1="78.74" x2="142.24" y2="81.28" width="0.1524" layer="91"/>
+<junction x="142.24" y="81.28"/>
+</segment>
+</net>
+<net name="N$3" class="0">
+<segment>
+<pinref part="U$1" gate="U$1" pin="RF"/>
+<wire x1="162.56" y1="66.04" x2="162.56" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
