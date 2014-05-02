@@ -655,6 +655,30 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </package>
 </packages>
 </library>
+<library name="SparkFun-DiscreteSemi">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find discrete semiconductors- transistors, diodes, TRIACs, optoisolators, etc.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; CC v3.0 Share-Alike You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="DIODE-ZENER">
+<wire x1="-1.778" y1="0.762" x2="1.778" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="1.778" y1="0" x2="1.778" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="1.778" y1="-0.762" x2="-1.778" y2="-0.762" width="0.2032" layer="21"/>
+<wire x1="-1.778" y1="-0.762" x2="-1.778" y2="0" width="0.2032" layer="21"/>
+<wire x1="-1.778" y1="0" x2="-1.778" y2="0.762" width="0.2032" layer="21"/>
+<wire x1="1.778" y1="0" x2="2.54" y2="0" width="0.2032" layer="21"/>
+<wire x1="-1.778" y1="0" x2="-2.54" y2="0" width="0.2032" layer="21"/>
+<wire x1="1.778" y1="0.762" x2="1.778" y2="0" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="P$1" x="-3.556" y="0" drill="0.9"/>
+<pad name="P$2" x="3.556" y="0" drill="0.9"/>
+<text x="-2.54" y="1.27" size="0.4064" layer="25">&gt;Name</text>
+<text x="-1.397" y="-0.508" size="0.4064" layer="21">&gt;Value</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -880,12 +904,7 @@ design rules under a new name.</description>
 <element name="R25" library="SparkFun-Resistors" package="0603-RES" value="100k" x="11.55" y="15.74" rot="R90"/>
 <element name="C23" library="SparkFun-Capacitors" package="CPOL-RADIAL-100UF-25V" value="100uF" x="40.128" y="12.852"/>
 <element name="Q2" library="transistor-npn" package="SOT23-BEC" value="MMBT3904" x="60.786" y="9.486" rot="R270"/>
-<element name="ZENDIODE" library="zetex" package="SOD323" value="MMBZ5235BW" x="66.474" y="9.152" rot="R270">
-<attribute name="OC_NEWARK" value="79R6078" x="58.854" y="38.362" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="CDSOD323-T05C" x="58.854" y="38.362" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MF" value="" x="58.854" y="38.362" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="OC_FARNELL" value="1824860" x="58.854" y="38.362" size="1.778" layer="27" rot="R270" display="off"/>
-</element>
+<element name="ZENDIODE" library="SparkFun-DiscreteSemi" package="DIODE-ZENER" value="MMBZ5235BW" x="67.274" y="8.452" rot="R270"/>
 <element name="D2" library="zetex" package="SOD323" value="1N4148" x="48.296" y="24.318" rot="R90">
 <attribute name="OC_NEWARK" value="79R6078" x="60.996" y="-16.322" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="CDSOD323-T05C" x="60.996" y="-16.322" size="1.778" layer="27" rot="R90" display="off"/>
@@ -925,7 +944,7 @@ design rules under a new name.</description>
 <contactref element="VOLTAGEINVERT" pad="3"/>
 <contactref element="Q2" pad="E"/>
 <contactref element="D2" pad="2"/>
-<contactref element="ZENDIODE" pad="2"/>
+<contactref element="ZENDIODE" pad="P$2"/>
 <contactref element="SWEEPAMP" pad="1"/>
 <contactref element="NOISEAMP" pad="3"/>
 <contactref element="OUTPUT" pad="2"/>
@@ -1033,8 +1052,10 @@ design rules under a new name.</description>
 <signal name="N$18">
 <contactref element="NOISEGEN" pad="2"/>
 <contactref element="C13" pad="2"/>
-<wire x1="56.266" y1="10.552" x2="58.073" y2="14.587" width="0.3048" layer="1"/>
-<wire x1="58.073" y1="14.587" x2="58.464" y2="14.196" width="0.3048" layer="1"/>
+<wire x1="56.266" y1="10.552" x2="56.752" y2="10.552" width="0.3048" layer="1"/>
+<wire x1="56.752" y1="10.552" x2="58.05" y2="11.85" width="0.3048" layer="1"/>
+<wire x1="58.05" y1="11.85" x2="58.05" y2="13.782" width="0.3048" layer="1"/>
+<wire x1="58.05" y1="13.782" x2="58.464" y2="14.196" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$19">
 <contactref element="R19" pad="2"/>
@@ -1059,13 +1080,13 @@ design rules under a new name.</description>
 <signal name="N$20">
 <contactref element="C12" pad="2"/>
 <contactref element="R17" pad="1"/>
-<contactref element="ZENDIODE" pad="1"/>
-<wire x1="64.644" y1="10.546" x2="66.18" y2="10.546" width="0.3048" layer="1"/>
-<wire x1="66.18" y1="10.546" x2="66.474" y2="10.252" width="0.3048" layer="1"/>
-<wire x1="65.178" y1="16.456" x2="65.178" y2="13.622" width="0.3048" layer="1"/>
-<wire x1="65.178" y1="13.622" x2="66.05" y2="12.75" width="0.3048" layer="1"/>
-<wire x1="66.05" y1="12.75" x2="66.05" y2="10.676" width="0.3048" layer="1"/>
-<wire x1="66.05" y1="10.676" x2="66.474" y2="10.252" width="0.3048" layer="1"/>
+<contactref element="ZENDIODE" pad="P$1"/>
+<wire x1="65.178" y1="16.456" x2="65.178" y2="14.104" width="0.3048" layer="1"/>
+<wire x1="65.178" y1="14.104" x2="67.274" y2="12.008" width="0.3048" layer="1"/>
+<wire x1="67.274" y1="12.008" x2="67.274" y2="11.274" width="0.3048" layer="1"/>
+<wire x1="67.274" y1="11.274" x2="66.5" y2="10.5" width="0.3048" layer="1"/>
+<wire x1="66.5" y1="10.5" x2="64.69" y2="10.5" width="0.3048" layer="1"/>
+<wire x1="64.69" y1="10.5" x2="64.644" y2="10.546" width="0.3048" layer="1"/>
 </signal>
 <signal name="VCC">
 <contactref element="C19" pad="1"/>
@@ -1107,11 +1128,20 @@ design rules under a new name.</description>
 <wire x1="13.9" y1="30.2" x2="20.2326" y2="23.8674" width="0.3048" layer="1"/>
 <wire x1="48.542" y1="18.29" x2="42.6812" y2="18.29" width="0.3048" layer="1"/>
 <wire x1="42.6812" y1="18.29" x2="42.6716" y2="18.2996" width="0.3048" layer="1"/>
-<wire x1="42.6716" y1="18.2996" x2="42.6716" y2="17.8284" width="0.3048" layer="1"/>
-<wire x1="42.6716" y1="17.8284" x2="45.1" y2="15.4" width="0.3048" layer="1"/>
-<wire x1="26.148" y1="28.566" x2="34.15" y2="31.3" width="0" layer="19" extent="1-1"/>
-<wire x1="29.825" y1="23.8674" x2="26.148" y2="28.566" width="0" layer="19" extent="1-1"/>
-<wire x1="42.6716" y1="18.2996" x2="29.825" y2="23.8674" width="0" layer="19" extent="1-1"/>
+<wire x1="29.825" y1="23.8674" x2="29.825" y2="24.889" width="0.3048" layer="1"/>
+<wire x1="29.825" y1="24.889" x2="26.148" y2="28.566" width="0.3048" layer="1"/>
+<wire x1="42.6716" y1="18.2996" x2="42.6716" y2="17.7784" width="0.3048" layer="1"/>
+<wire x1="42.6716" y1="17.7784" x2="45" y2="15.45" width="0.3048" layer="1"/>
+<via x="45" y="15.45" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="45" y1="15.45" x2="42.85" y2="15.45" width="0.3048" layer="16"/>
+<wire x1="42.85" y1="15.45" x2="28.85" y2="29.45" width="0.3048" layer="16"/>
+<via x="28.85" y="29.45" extent="1-16" drill="0.6" shape="square"/>
+<wire x1="28.85" y1="29.45" x2="28.85" y2="29.55" width="0.3048" layer="1"/>
+<wire x1="28.85" y1="29.55" x2="30.55" y2="31.25" width="0.3048" layer="1"/>
+<wire x1="30.55" y1="31.25" x2="34.1" y2="31.25" width="0.3048" layer="1"/>
+<wire x1="34.1" y1="31.25" x2="34.15" y2="31.3" width="0.3048" layer="1"/>
+<wire x1="26.148" y1="28.566" x2="27.966" y2="28.566" width="0.3048" layer="1"/>
+<wire x1="27.966" y1="28.566" x2="28.85" y2="29.45" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$21">
 <contactref element="R22" pad="2"/>
@@ -1307,7 +1337,12 @@ design rules under a new name.</description>
 <signal name="N$35">
 </signal>
 <signal name="N$36">
-<via x="45.05" y="15.35" extent="1-16" drill="0.6" shape="square"/>
+</signal>
+<signal name="N$37">
+<via x="28.85" y="29.5" extent="1-16" drill="0.6" shape="square"/>
+</signal>
+<signal name="N$38">
+<via x="45" y="15.45" extent="1-16" drill="0.6" shape="square"/>
 </signal>
 </signals>
 </board>
